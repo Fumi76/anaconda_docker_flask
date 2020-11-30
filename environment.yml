@@ -1,0 +1,12 @@
+name: anaconda_docker_flask
+channels:
+  - defaults
+dependencies:
+  - ca-certificates=2020.10.14=0
+  - click=7.1.2=py_0
+  - flask=1.1.2=py_0
+  - itsdangerous=1.1.0=py_0
+  - jinja2=2.11.2=py_0
+  - werkzeug=1.0.1=py_0
+  - wheel=0.35.1=pyhd3eb1b0_0
+  - gunicorn
