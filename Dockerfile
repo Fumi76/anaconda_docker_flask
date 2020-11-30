@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:latest
+FROM continuumio/miniconda:latest
 
 RUN pip install --upgrade pip
 

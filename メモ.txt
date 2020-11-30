@@ -1,0 +1,45 @@
+boot.shの改行コードは\nである必要があることに注意
+
+このページを参考にした
+https://softwarejargon.com/dockerizing-python-flask-app-and-conda-environment/
+
+上記minicondaを使っている...
+
+参考になる
+https://stackoverflow.com/questions/56598126/docker-image-conda-environment-and-flask
+
+
+environment.ymlの意味がまだわかっていない
+pythonとかmysql-connector-pythonとかも削除しなくてはいけないことになっている...
+
+ResolvePackageNotFound Error
+https://github.com/ContinuumIO/docker-images/issues/109
+
+Windowsで使用しているパッケージがLinux(anaconda docker)では使用できないとのことのようだ
+
+---
+
+https://pythonspeed.com/articles/activate-conda-dockerfile/
+2020/7
+conda runパターン、人によって意見が分かれる
+
+上記、anaconda3イメージではなくてminiconda3イメージを使っている
+その場合、必要に応じてライブラリを指定する必要があるのではないか？
+
+-----
+
+anacondaのDockerを使用
+Windowsで生成したenvironment.ymlはライブラリのインストールでエラーになるので、
+それらについてはenvironment.ymlから削除する必要がある
+
+gunicornは追加する必要がある
+
+
+-----
+anaconda or miniconda
+
+Anaconda is a full distribution of the central software in the PyData ecosystem, and includes Python itself along with the binaries for several hundred third-party open-source projects. Miniconda is essentially an installer for an empty conda environment, containing only Conda, its dependencies, and Python.Jul 31, 2017
+
+Note that Conda is the package manager (e.g. conda list displays all installed packages in the environment), whereas Anaconda and Miniconda are distributions. A software distribution is a collection of packages, pre-built and pre-configured, that can be installed and used on a system. A package manager is a tool that automates the process of installing, updating, and removing packages.
+
+
