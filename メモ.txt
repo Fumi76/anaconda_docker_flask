@@ -43,3 +43,16 @@ Anaconda is a full distribution of the central software in the PyData ecosystem,
 Note that Conda is the package manager (e.g. conda list displays all installed packages in the environment), whereas Anaconda and Miniconda are distributions. A software distribution is a collection of packages, pre-built and pre-configured, that can be installed and used on a system. A package manager is a tool that automates the process of installing, updating, and removing packages.
 
 
+-----
+minicondaのDockerfileは公開されている
+https://hub.docker.com/r/continuumio/miniconda3/dockerfile
+
+参考にする
+
+最後のtiniはインストールしないでやってみる
+
+
+
+python -c 'print("Hi")'
+
+
