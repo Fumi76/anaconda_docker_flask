@@ -12,8 +12,8 @@ RUN chmod +x boot.sh
 
 RUN conda env create -f environment.yml
 
-RUN echo "source activate anaconda_docker_flask" > ~/.bashrc
-ENV PATH /opt/conda/envs/anaconda_docker_flask/bin:$PATH
+RUN echo "source activate miniconda_docker_flask" > ~/.bashrc
+ENV PATH /opt/conda/envs/miniconda_docker_flask/bin:$PATH
 
 EXPOSE 5000
 

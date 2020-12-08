@@ -1,4 +1,4 @@
-name: anaconda_docker_flask
+name: miniconda_docker_flask
 channels:
   - defaults
 dependencies:
